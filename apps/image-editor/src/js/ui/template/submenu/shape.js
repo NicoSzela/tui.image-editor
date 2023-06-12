@@ -13,13 +13,13 @@ export default ({ locale, makeSvgIcon }) => `
                 </div>
                 <label> ${locale.localize('Rectangle')} </label>
             </div>
-            <div class="tui-image-editor-button circle">
+            <div class="tui-image-editor-button circle" style="display: none;">
                 <div>
                     ${makeSvgIcon(['normal', 'active'], 'shape-circle', true)}
                 </div>
                 <label> ${locale.localize('Circle')} </label>
             </div>
-            <div class="tui-image-editor-button triangle">
+            <div class="tui-image-editor-button triangle" style="display: none;">
                 <div>
                     ${makeSvgIcon(['normal', 'active'], 'shape-triangle', true)}
                 </div>
@@ -29,14 +29,14 @@ export default ({ locale, makeSvgIcon }) => `
         <li class="tui-image-editor-partition">
             <div></div>
         </li>
-        <li class="tie-shape-color-button">
+        <li class="tie-shape-color-button" style="display: none;">
             <div class="tie-color-fill" title="${locale.localize('Fill')}"></div>
             <div class="tie-color-stroke" title="${locale.localize('Stroke')}"></div>
         </li>
-        <li class="tui-image-editor-partition only-left-right">
+        <li class="tui-image-editor-partition only-left-right" style="display: none;">
             <div></div>
         </li>
-        <li class="tui-image-editor-newline tui-image-editor-range-wrap">
+        <li class="tui-image-editor-newline tui-image-editor-range-wrap" style="display: none;">
             <label class="range">${locale.localize('Stroke')}</label>
             <div class="tie-stroke-range"></div>
             <input class="tie-stroke-range-value tui-image-editor-range-value" value="0" />
